@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Trail from '../components/trail'
 
 const text = css`
-  ${tw`text-black text-md`};
+  ${tw`text-black font-serif text-lg`}
 `
 
 function About() {
@@ -15,7 +15,7 @@ function About() {
       <Layout>
         <h1
           css={css`
-            ${tw`text-black font-bold`};
+            ${tw`font-sans text-grey-darkest text-4xl`};
           `}
         >
           About Me

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog MDX`,
+    title: `Matt Hagner`,
     author: `Matt Hagner`,
-    description: `An extension of the gatsby starter blog, with support for MDX`,
-    siteUrl: `https://gatsby-starter-blog-mdx-demo.netlify.com/`,
+    description: `A front end developer with a passion for React, static site gen, and CSS in JS`,
+    siteUrl: `matthagner.com`,
     social: {
       twitter: `mattinthecouch`,
     },

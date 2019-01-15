@@ -1,5 +1,7 @@
 import React from 'react'
+import tw from 'tailwind.macro'
 import { useSpring, config, animated } from 'react-spring/hooks'
+import { css } from '@emotion/core'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -26,7 +28,11 @@ function Layout({ children }) {
       }}
     >
       {children}
-      <footer>
+      <footer
+        css={css`
+          ${tw`text-center my-20 text-sm font-semibold font-serif`};
+        `}
+      >
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>

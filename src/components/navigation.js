@@ -8,14 +8,14 @@ import { css } from '@emotion/core'
 const NavLink = ({ to, children }) => (
   <li
     css={css`
-      ${tw`mr-3 capitalize`};
+      ${tw`mr-6 capitalize`};
     `}
   >
     <Link
       to={to}
       css={css`
         transition: color 200ms ease-in-out;
-        ${tw`text-sm font-semibold text-grey-darker hover:text-black uppercase`};
+        ${tw`text-base shadow-none font-sans font-semibold text-grey-darker hover:text-black uppercase`};
       `}
     >
       {children}
@@ -23,7 +23,7 @@ const NavLink = ({ to, children }) => (
   </li>
 )
 
-function Navigation({ author, avatar, title }) {
+function Navigation() {
   const styles = useSpring({
     native: true,
     opacity: 1,
@@ -36,26 +36,26 @@ function Navigation({ author, avatar, title }) {
       render={data => (
         <animated.header
           css={css`
-            ${tw`w-full`};
+            ${tw`w-full mt-10 mb-0`};
           `}
           style={styles}
         >
           <nav
             css={css`
-              ${tw`w-4/5 mx-auto flex items-center py-4`};
+              ${tw`w-3/5 mx-auto flex items-center py-4`};
             `}
           >
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={data.author}
               css={css`
-                ${tw`mr-3 mb-0 rounded-full`};
+                ${tw`mr-12 mb-0 rounded-full`};
                 min-width: 50px;
               `}
             />
             <h3
               css={css`
-                ${tw`text-black my-auto`};
+                ${tw`text-grey-darkest font-serif my-auto`};
               `}
             >
               {data.site.siteMetadata.title}

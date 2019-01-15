@@ -8,23 +8,23 @@ import { animated } from 'react-spring/hooks'
 import { rhythm } from '../utils/typography'
 
 const card = css`
-  ${tw`max-w-md rounded overflow-hidden shadow-md my-6 px-6`};
+  ${tw`max-w-md rounded overflow-hidden shadow-md my-10 px-6`};
 `
 
 const cardTitle = css`
-  ${tw`font-bold text-xl mb-2`};
+  ${tw`font-bold text-xl mb-0`};
 `
 
 const titleLink = css`
-  ${tw`text-blue shadow-none hover:text-blue-dark`};
+  ${tw`text-blue shadow-none hover:text-blue-dark font-sans text-3xl`};
 `
 
 const date = css`
-  ${tw`text-grey-darker`};
+  ${tw`text-grey-darker font-sans font-medium text-sm`};
 `
 
 const cardExcerpt = css`
-  ${tw`text-grey-darkest text-base`};
+  ${tw`text-grey-darkest text-lg font-serif mt-3`};
 `
 
 function BlogPostCard({ post: { excerpt, fields, frontmatter }, style }) {
