@@ -5,13 +5,23 @@ import { StaticQuery, Link, graphql } from 'gatsby'
 import { animated, useSpring } from 'react-spring/hooks'
 import { css } from '@emotion/core'
 
-const list = css`
-  ${tw`mr-3 capitalize`};
-`
-
-const navLink = css`
-  ${tw`text-sm font-semibold text-grey-darker hover:text-black`};
-`
+const NavLink = ({ to, children }) => (
+  <li
+    css={css`
+      ${tw`mr-3 capitalize`};
+    `}
+  >
+    <Link
+      to={to}
+      css={css`
+        transition: color 200ms ease-in-out;
+        ${tw`text-sm font-semibold text-grey-darker hover:text-black uppercase`};
+      `}
+    >
+      {children}
+    </Link>
+  </li>
+)
 
 function Navigation({ author, avatar, title }) {
   const styles = useSpring({
@@ -56,21 +66,9 @@ function Navigation({ author, avatar, title }) {
                 list-style: none;
               `}
             >
-              <li css={list}>
-                <Link to="/" css={navLink}>
-                  Home
-                </Link>
-              </li>
-              <li css={list}>
-                <Link to="/about" css={navLink}>
-                  About
-                </Link>
-              </li>
-              <li css={list}>
-                <Link to="/blog" css={navLink}>
-                  Blog
-                </Link>
-              </li>
+              <NavLink to={`/`}>Home</NavLink>
+              <NavLink to={`/about`}>About</NavLink>
+              <NavLink to={`/blog`}>Blog</NavLink>
             </ul>
           </nav>
         </animated.header>
