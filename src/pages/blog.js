@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { useChain, useSpring, animated } from 'react-spring/hooks'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
