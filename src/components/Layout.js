@@ -5,6 +5,10 @@ import { css } from '@emotion/core'
 
 import { rhythm, scale } from '../utils/typography'
 
+const link = css`
+  ${tw`m-2`}
+`
+
 function Layout({ children }) {
   const styles = useSpring({
     native: true,
@@ -33,9 +37,19 @@ function Layout({ children }) {
           ${tw`text-center my-20 text-sm font-semibold font-serif`};
         `}
       >
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div
+          css={css`
+            ${tw`flex justify-center`}
+          `}
+        >
+          <a css={link} href="https://github.com/hagnerd">
+            Github
+          </a>
+          <a css={link} href="https://twitter.com/_hagnerd">
+            Twitter
+          </a>
+        </div>
+        <p>© {new Date().getFullYear()} Matt Hagner</p>
       </footer>
     </animated.div>
   )
