@@ -3,7 +3,7 @@ module.exports = {
     title: `Matt Hagner`,
     author: `Matt Hagner`,
     description: `A front end developer with a passion for React, static site gen, and CSS in JS`,
-    siteUrl: `matthagner.com`,
+    siteUrl: `https://matthagner.com`,
     social: {
       twitter: `mattinthecouch`,
     },
