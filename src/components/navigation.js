@@ -42,7 +42,7 @@ function Navigation() {
         >
           <nav
             css={css`
-              ${tw`w-3/5 mx-auto flex items-center py-4`};
+              ${tw`flex items-center py-4 justify-center`};
             `}
           >
             <Image
@@ -60,7 +60,7 @@ function Navigation() {
             >
               {data.site.siteMetadata.title}
             </h3>
-            <ul
+            {/* <ul
               css={css`
                 ${tw`flex ml-auto items-center my-auto `};
                 list-style: none;
@@ -69,7 +69,7 @@ function Navigation() {
               <NavLink to={`/`}>Home</NavLink>
               <NavLink to={`/portfolio`}>Portfolio</NavLink>
               <NavLink to={`/blog`}>Blog</NavLink>
-            </ul>
+            </ul>*/}
           </nav>
         </animated.header>
       )}
