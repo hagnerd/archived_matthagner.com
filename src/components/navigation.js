@@ -49,7 +49,7 @@ function Navigation() {
               fixed={data.avatar.childImageSharp.fixed}
               alt={data.author}
               css={css`
-                ${tw`mr-12 mb-0 rounded-full`};
+                ${tw`mr-12 mb-0 h-4 w-4 rounded-full shadow-inner`};
                 min-width: 50px;
               `}
             />
@@ -60,16 +60,6 @@ function Navigation() {
             >
               {data.site.siteMetadata.title}
             </h3>
-            {/* <ul
-              css={css`
-                ${tw`flex ml-auto items-center my-auto `};
-                list-style: none;
-              `}
-            >
-              <NavLink to={`/`}>Home</NavLink>
-              <NavLink to={`/portfolio`}>Portfolio</NavLink>
-              <NavLink to={`/blog`}>Blog</NavLink>
-            </ul>*/}
           </nav>
         </animated.header>
       )}
@@ -81,7 +71,7 @@ const navQuery = graphql`
   query navQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 70, height: 70) {
           ...GatsbyImageSharpFixed
         }
       }

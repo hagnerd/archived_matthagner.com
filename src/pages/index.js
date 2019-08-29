@@ -22,16 +22,13 @@ function About() {
         </h1>
         <Trail delay={200}>
           <p css={text}>
-            My name is Matt Hagner, and I am a self taught developer. I fell in
-            love with programming on accident while figuring out how to automate
-            switching printers at work. I started attending Lambda School in
-            March of 2019, and even though I'm attending their 1 year part time
-            program, my goal is to be hired by the end of the year.
+            My name is Matt Hagner, and I am a front end developer currently
+            working at SDG, a consultancy in Minnesota, and attending Lambda's
+            full-stack development bootcamp on nights and weekends.
           </p>
           <p css={text}>
-            My passion is in front end development, but I also like things like:
-            ReasonML/OCaml, GraphQL, TypeScript, Test Driven Development, and
-            all things functional programming.
+            When I'm not programming I love to travel with my fiancee, drink
+            craft beer, and cook.
           </p>
         </Trail>
       </Layout>
