@@ -1,0 +1,25 @@
+{
+  "name": "matthagner.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matt Hagner",
+  "license": "MIT",
+  "dependencies": {
+    "@lekoarts/gatsby-theme-minimal-blog": "^1.1.5",
+    "gatsby": "^2.18.17",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "lint": "eslint --ignore-path .gitignore src"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
